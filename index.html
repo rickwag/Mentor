@@ -702,7 +702,158 @@
       </div>
 
       <div class="test-cards mt-4">
-        <div class="swiper">
+        <div class="swiper d-none d-md-block">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide mb-5 mb-md-0">
+              <div
+                class="testimonial d-flex flex-column justify-content-between"
+              >
+                <img
+                  class="mb-3"
+                  width="35px"
+                  src="assets/images/quotes.png"
+                  alt="quotes image"
+                />
+                <p class="text">
+                  "Phoenix KE workshops are top-notch! As someone who's always
+                  looking to stay ahead in the rapidly evolving tech world, I
+                  appreciate the up-to-date content and engaging multimedia.
+                </p>
+                <div class="avatar d-flex align-items-center">
+                  <img
+                    class="me-2"
+                    src="assets/images/jane.png"
+                    alt="avatar image"
+                  />
+                  <div class="about d-flex flex-column">
+                    <span class="name">Jane Doe</span>
+                    <span class="occupation">Data Scientist</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide mb-5 mb-md-0">
+              <div
+                class="testimonial d-flex flex-column justify-content-between"
+              >
+                <img
+                  class="mb-3"
+                  width="35px"
+                  src="assets/images/quotes.png"
+                  alt="quotes image"
+                />
+                <p class="text">
+                  "Phoenix KE workshops are top-notch! As someone who's always
+                  looking to stay ahead in the rapidly evolving tech world, I
+                  appreciate the up-to-date content and engaging multimedia.
+                </p>
+                <div class="avatar d-flex align-items-center">
+                  <img
+                    class="me-2"
+                    src="assets/images/jane.png"
+                    alt="avatar image"
+                  />
+                  <div class="about d-flex flex-column">
+                    <span class="name">Jane Doe</span>
+                    <span class="occupation">Data Scientist</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide mb-5 mb-md-0">
+              <div
+                class="testimonial d-flex flex-column justify-content-between"
+              >
+                <img
+                  class="mb-3"
+                  width="35px"
+                  src="assets/images/quotes.png"
+                  alt="quotes image"
+                />
+                <p class="text">
+                  "Phoenix KE workshops are top-notch! As someone who's always
+                  looking to stay ahead in the rapidly evolving tech world, I
+                  appreciate the up-to-date content and engaging multimedia.
+                </p>
+                <div class="avatar d-flex align-items-center">
+                  <img
+                    class="me-2"
+                    src="assets/images/jane.png"
+                    alt="avatar image"
+                  />
+                  <div class="about d-flex flex-column">
+                    <span class="name">Jane Doe</span>
+                    <span class="occupation">Data Scientist</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide mb-5 mb-md-0">
+              <div
+                class="testimonial d-flex flex-column justify-content-between"
+              >
+                <img
+                  class="mb-3"
+                  width="35px"
+                  src="assets/images/quotes.png"
+                  alt="quotes image"
+                />
+                <p class="text">
+                  "Phoenix KE workshops are top-notch! As someone who's always
+                  looking to stay ahead in the rapidly evolving tech world, I
+                  appreciate the up-to-date content and engaging multimedia.
+                </p>
+                <div class="avatar d-flex align-items-center">
+                  <img
+                    class="me-2"
+                    src="assets/images/jane.png"
+                    alt="avatar image"
+                  />
+                  <div class="about d-flex flex-column">
+                    <span class="name">Jane Doe</span>
+                    <span class="occupation">Data Scientist</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div
+                class="testimonial d-flex flex-column justify-content-between"
+              >
+                <img
+                  class="mb-3"
+                  width="35px"
+                  src="assets/images/quotes.png"
+                  alt="quotes image"
+                />
+                <p class="text">
+                  "Phoenix KE workshops are top-notch! As someone who's always
+                  looking to stay ahead in the rapidly evolving tech world, I
+                  appreciate the up-to-date content and engaging multimedia.
+                </p>
+                <div class="avatar d-flex align-items-center">
+                  <img
+                    class="me-2"
+                    src="assets/images/jane.png"
+                    alt="avatar image"
+                  />
+                  <div class="about d-flex flex-column">
+                    <span class="name">Jane Doe</span>
+                    <span class="occupation">Data Scientist</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--<div class="swiper-pagination"></div>-->
+        </div>
+
+        <div class="d-block d-md-none swiper-mobile">
           <div class="swiper-wrapper">
             <div class="swiper-slide mb-5 mb-md-0">
               <div
@@ -1021,6 +1172,30 @@
         loop: true,
         slidesPerView: 3,
         spaceBetween: 50,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      const swiper_mobile = new Swiper(".swiper-mobile", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 0,
 
         // If we need pagination
         pagination: {
