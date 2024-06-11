@@ -1,0 +1,467 @@
+@import '_variables';
+@import '_mixins';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-user-drag: none;
+    /* Safari */
+    -khtml-user-drag: none;
+    /* Konqueror */
+    -moz-user-drag: none;
+    /* Firefox */
+    -o-user-drag: none;
+}
+
+a.active {
+    color: #614D43;
+    border-bottom: 1px solid #614D43;
+    padding-bottom: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+h4.bordered {
+    font-size: 16px;
+    background-color: #F1ECEA;
+    border-radius: 4px;
+    padding: 2px 5px;
+}
+
+body {
+    background-color: $primary_color;
+    font-family: $main_family, sans-serif;
+
+    div.my-nav {
+        @include mainPadding;
+
+        box-shadow: 0 2px 4px -1px #1A38601A, 0 3px 12px -1px #1C375A29;
+
+        a {
+            font-family: $button_family, sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        ul.navbar-nav>li {
+            margin-right: 25px;
+        }
+
+        img {
+            border-radius: 4px;
+        }
+    }
+
+    .collapse {
+        .btn {
+            padding: 10px 24px;
+        }
+    }
+
+    .navbar {
+        background-color: #fff;
+    }
+
+    .hero {
+        @include mainPadding;
+        font-family: $main_family, sans-serif;
+
+        padding-top: 40px;
+
+        .row {
+            .info {
+                margin-top: 100px;
+            }
+        }
+
+        h1 {
+            font-size: 60px;
+            font-weight: bold;
+            position: relative;
+
+            img {
+                position: absolute;
+                top: -48%;
+                right: -12%;
+            }
+        }
+
+        .lineb {
+            img {
+                margin-top: -70px;
+                z-index: -1;
+                position: relative;
+            }
+        }
+
+        .btn {
+            background-color: $browny_color;
+            color: #fff;
+            padding: 10px 24px;
+        }
+
+        .bottom {
+            img {
+                margin-left: -15px;
+            }
+        }
+    }
+
+    .btn {
+        font-family: $button_family, sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .counter {
+        @include mainPadding;
+        font-family: $main_family, sans-serif;
+        margin-top: 100px;
+
+        .card-counter {
+            background-color: #E2D8D3;
+            padding: 12px 0;
+            border-radius: 4px;
+            position: relative;
+
+            .content {
+                width: 60%;
+                margin: auto;
+
+                .count {
+                    font-weight: bold;
+                    font-size: 31px;
+                }
+
+                p {
+                    font-size: 13px;
+                    margin-bottom: 0;
+                }
+            }
+
+            .bar {
+                background-color: #E2D8D3;
+                top: 10%;
+                right: -28%;
+                position: absolute;
+                width: 5px;
+                height: 80%;
+            }
+        }
+    }
+
+    .partners {
+        margin-top: 50px;
+        @include mainPadding;
+        font-family: $main_family, sans-serif;
+
+        header {
+            width: 20%;
+            margin: auto;
+        }
+    }
+
+    h2 {
+        font-weight: bold;
+        font-size: 31px;
+    }
+
+    .journey {
+        @include mainPadding;
+        margin-top: 100px;
+        font-family: $main_family, sans-serif;
+
+        h4 {
+            width: 55%;
+        }
+
+        a.btn {
+            background-color: #fff;
+            border-radius: 4px;
+            border-color: #796154;
+            color: #796154;
+            padding: 10px 24px;
+        }
+    }
+
+    .workshops {
+        @include mainPadding;
+        margin-top: 100px;
+        font-family: $main_family, sans-serif;
+
+        h4 {
+            width: 85%;
+        }
+    }
+
+    .webinars {
+        @include mainPadding;
+        margin-top: 40px;
+        font-family: $main_family, sans-serif;
+
+        .content {
+            padding: 20px 15px;
+
+            .tags> :first-child {
+                background-color: #483A32;
+                color: #fff;
+                padding: 6px 10px;
+                margin-right: 20px;
+            }
+
+            .tags> :last-child {
+                background-color: #E1F7E3;
+                color: #15711F;
+                padding: 6px 10px;
+            }
+
+            .tags {
+                span {
+                    border-radius: 4px;
+                    font-size: 10px;
+                    font-weight: 700;
+                }
+            }
+
+            h3 {
+                font-size: 16px;
+                font-weight: bold;
+                margin-top: 15px;
+            }
+
+            p.text,
+            div.meta {
+                font-size: 13px;
+            }
+
+            p.price {
+                font-size: 13px;
+                font-weight: 600;
+                color: #2E2E2E;
+                margin-top: 8px;
+            }
+
+            a.btn {
+                background-color: #796154;
+                color: #fff;
+                font-size: 14px;
+                padding: 8px 12px;
+            }
+
+            a.btn.outline {
+                background-color: transparent;
+                color: #483A32;
+                border: 1px solid #483A32;
+            }
+
+            .row {
+
+                .content,
+                .banner {
+                    box-shadow: 0 1px 4px -1px rgba(#1C3454, .26);
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+
+    .mentorship {
+        background-color: #E2D8D3;
+        padding-bottom: 20px;
+
+        .bordered {
+            width: 55%;
+            background-color: #fff;
+        }
+
+        .workshops {
+            .row {
+                padding-top: 65px;
+            }
+        }
+
+        .webinars {
+            .row {
+                .content {
+                    background-color: #fff;
+
+                    .tags> :first-child {
+                        background-color: #3F6212;
+                        color: #fff;
+                        padding: 6px 10px;
+                        margin-right: 20px;
+                    }
+
+                    .mybtn> :last-child {
+                        color: #796154;
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+
+    .mentorship.events {
+        background-color: transparent;
+
+        .bordered {
+            background-color: #F1ECEA;
+            width: 22%;
+        }
+
+        .webinars {
+            .content {
+                .tags> :first-child {
+                    background-color: #115E59;
+                }
+            }
+        }
+    }
+
+    .testimonials {
+        @include mainPadding;
+        margin-top: 100px;
+        font-family: $main_family, sans-serif;
+
+        .bordered {
+            width: 34%;
+        }
+
+        .testimonial {
+            box-shadow: 0 0 8px 0 rgba(#3B82F6, .12);
+            border-radius: 16px;
+            padding: 28px 20px;
+            font-family: $button_family, sans-serif;
+
+            .text {
+                font-size: 16px;
+            }
+
+            span.name {
+                font-weight: 600;
+                font-size: 18px;
+            }
+
+            span.occupation {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .shop {
+        @include mainPadding;
+        margin-top: 100px;
+        font-family: $main_family, sans-serif;
+
+        .bordered {
+            width: 22%;
+        }
+
+        .product {
+            box-shadow: 0 1px 4px -1px rgba(#1C3454, .26);
+            padding: 15px;
+            border-radius: 8px;
+
+            h4 {
+                font-size: 16px;
+            }
+
+            .footer {
+                padding: 0 15px;
+
+                a.btn {
+                    background-color: #796154;
+                    color: #fff;
+                    font-size: 14px;
+                }
+
+                span {
+                    font-size: 13px;
+                }
+
+                .previous {
+                    text-decoration: line-through;
+                    color: #9CB1C9;
+                }
+
+                .costs {
+                    padding: 0;
+                }
+
+                .price {
+                    font-weight: 600;
+                }
+            }
+        }
+
+    }
+
+    footer {
+        background-color: #000;
+        margin-top: 100px;
+        font-family: $button_family, sans-serif;
+        overflow-x: hidden;
+        padding-top: 100px;
+        color: #8C94A3;
+
+        .footer-top {
+            @include mainPadding;
+
+            .socials {
+                img {
+                    margin-right: 12px;
+                    width: 46px;
+                }
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            h4 {
+                font-size: 14px;
+                font-weight: 500;
+                color: #fff;
+            }
+
+            a {
+                color: #8C94A3;
+                font-size: 14px;
+                margin-bottom: 14px;
+                text-decoration: none;
+            }
+
+            .newsletter {
+                input {
+                    padding: 10px 15px;
+                    border-top-left-radius: 6px;
+                    border-bottom-left-radius: 6px;
+                    border: none;
+                }
+
+                .letter-box {
+                    span {
+                        background-color: #A18170;
+                        height: 50px;
+                        width: 50px;
+                        color: #fff;
+                        font-size: 1.2rem;
+                        border-top-right-radius: 6px;
+                        border-bottom-right-radius: 6px;
+                    }
+                }
+            }
+        }
+
+        .footer-bottom {
+            box-shadow: inset 0 1px 0 0 rgba(#363B47, .5);
+            font-size: 14px;
+            padding: 30px 0;
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
