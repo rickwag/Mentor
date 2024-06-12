@@ -335,11 +335,39 @@ body .testimonials .bordered {
     width: 100%;
   }
 }
+body .testimonials .swiper {
+  padding-bottom: 65px;
+}
+body .testimonials .swiper-button-next, body .testimonials .swiper-button-prev {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+body .testimonials .swiper-button-next {
+  background-image: url("/assets/images/next.png");
+  width: 60px;
+  top: 93%;
+  right: 40%;
+}
+body .testimonials .swiper-button-prev {
+  background-image: url("/assets/images/prev.png");
+  width: 60px;
+  top: 93%;
+  left: 46%;
+}
+body .testimonials .swiper-button-next::after, body .testimonials .swiper-button-prev::after {
+  display: none;
+}
 body .testimonials .testimonial {
   box-shadow: 0 0 8px 0 rgba(59, 130, 246, 0.12);
   border-radius: 16px;
   padding: 28px 20px;
   font-family: "Inter", sans-serif;
+  width: 30vw;
+}
+@media (max-width: 720px) {
+  body .testimonials .testimonial {
+    width: 100%;
+  }
 }
 body .testimonials .testimonial .text {
   font-size: 16px;

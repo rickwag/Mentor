@@ -851,6 +851,8 @@
           </div>
 
           <!--<div class="swiper-pagination"></div>-->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
 
         <div class="d-block d-md-none swiper-mobile">
@@ -1171,7 +1173,10 @@
         direction: "horizontal",
         loop: true,
         slidesPerView: 3,
-        spaceBetween: 50,
+        spaceBetween: 10,
+        slidesOffsetBefore: 230, 
+
+        centeredSlides: true,
 
         // If we need pagination
         pagination: {

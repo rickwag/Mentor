@@ -412,12 +412,43 @@ body {
             }
         }
 
+        .swiper {
+            padding-bottom: 65px;
+        }
+        .swiper-button-next, .swiper-button-prev {
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .swiper-button-next {
+            background-image: url('/assets/images/next.png');
+            width: 60px;
+            top: 93%;
+            right: 40%;
+            // right: 10px; /* Adjust positioning as needed */
+        }
+        .swiper-button-prev {
+            background-image: url('/assets/images/prev.png');
+            width: 60px;
+            top: 93%;
+            left: 46%;
+            // left: 10px; /* Adjust positioning as needed */
+        }
+
+        .swiper-button-next::after, .swiper-button-prev::after {
+            display: none;
+        }
+
         .testimonial {
             box-shadow: 0 0 8px 0 rgba(#3B82F6, .12);
             border-radius: 16px;
             padding: 28px 20px;
             font-family: $button_family, sans-serif;
 
+            width: 30vw;
+
+            @include md {
+                width: 100%;
+            }
 
             .text {
                 font-size: 16px;
