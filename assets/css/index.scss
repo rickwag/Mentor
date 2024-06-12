@@ -22,8 +22,17 @@ a.active {
     padding-right: 0 !important;
 }
 
+a.nav-link {
+    color: #fff !important;
+}
+
 a.nav-link:hover {
-    color: #796154;
+    color: #796154 !important;
+}
+
+a.nav-link.show,
+a.nav-link.active {
+    color: #fff !important;
 }
 
 h4.bordered {
@@ -41,10 +50,15 @@ h4.bordered {
 body {
     background-color: $primary_color;
     font-family: $main_family, sans-serif;
+    position: relative;
 
     div.my-nav {
         @include mainPadding;
         background-color: #000;
+
+        position: sticky;
+        top: 0;
+        z-index: 5;
 
         box-shadow: 0 2px 4px -1px #1A38601A, 0 3px 12px -1px #1C375A29;
 
@@ -75,6 +89,7 @@ body {
     }
 
     .navbar {
+
         // background-color: #fff;
         a {
             color: #fff;
@@ -427,10 +442,13 @@ body {
         .swiper {
             padding-bottom: 65px;
         }
-        .swiper-button-next, .swiper-button-prev {
+
+        .swiper-button-next,
+        .swiper-button-prev {
             background-size: contain;
             background-repeat: no-repeat;
         }
+
         .swiper-button-next {
             background-image: url('/assets/images/next.png');
             width: 60px;
@@ -438,6 +456,7 @@ body {
             right: 40%;
             // right: 10px; /* Adjust positioning as needed */
         }
+
         .swiper-button-prev {
             background-image: url('/assets/images/prev.png');
             width: 60px;
@@ -446,7 +465,8 @@ body {
             // left: 10px; /* Adjust positioning as needed */
         }
 
-        .swiper-button-next::after, .swiper-button-prev::after {
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
             display: none;
         }
 

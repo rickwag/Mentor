@@ -19,8 +19,17 @@ a.active {
   padding-right: 0 !important;
 }
 
+a.nav-link {
+  color: #fff !important;
+}
+
 a.nav-link:hover {
-  color: #796154;
+  color: #796154 !important;
+}
+
+a.nav-link.show,
+a.nav-link.active {
+  color: #fff !important;
 }
 
 h4.bordered {
@@ -39,10 +48,14 @@ h4.bordered {
 body {
   background-color: #FDFCFC;
   font-family: "Montserrat", sans-serif;
+  position: relative;
 }
 body div.my-nav {
   padding: 0 4%;
   background-color: #000;
+  position: sticky;
+  top: 0;
+  z-index: 5;
   box-shadow: 0 2px 4px -1px rgba(26, 56, 96, 0.1019607843), 0 3px 12px -1px rgba(28, 55, 90, 0.1607843137);
 }
 body div.my-nav a {
@@ -348,7 +361,8 @@ body .testimonials .bordered {
 body .testimonials .swiper {
   padding-bottom: 65px;
 }
-body .testimonials .swiper-button-next, body .testimonials .swiper-button-prev {
+body .testimonials .swiper-button-next,
+body .testimonials .swiper-button-prev {
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -364,7 +378,8 @@ body .testimonials .swiper-button-prev {
   top: 93%;
   left: 46%;
 }
-body .testimonials .swiper-button-next::after, body .testimonials .swiper-button-prev::after {
+body .testimonials .swiper-button-next::after,
+body .testimonials .swiper-button-prev::after {
   display: none;
 }
 body .testimonials .testimonial {
