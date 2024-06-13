@@ -58,6 +58,9 @@ body div.my-nav {
   z-index: 5;
   box-shadow: 0 2px 4px -1px rgba(26, 56, 96, 0.1019607843), 0 3px 12px -1px rgba(28, 55, 90, 0.1607843137);
 }
+body div.my-nav .navbar-toggler-icon {
+  background-color: #fff; /* Change this to your desired color */
+}
 body div.my-nav a {
   font-family: "Inter", sans-serif;
   font-size: 16px;

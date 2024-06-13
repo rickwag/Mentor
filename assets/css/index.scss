@@ -60,6 +60,10 @@ body {
         top: 0;
         z-index: 5;
 
+        .navbar-toggler-icon {
+            background-color: #fff; /* Change this to your desired color */
+        }
+
         box-shadow: 0 2px 4px -1px #1A38601A, 0 3px 12px -1px #1C375A29;
 
         a {
